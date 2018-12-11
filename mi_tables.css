@@ -14,7 +14,10 @@
 */
 
 /* Table Styles */
-
+table {
+    background: linear-gradient(rgb(190, 215, 255));
+    border: 5px solid grey;
+}
 
 
 /* Column Styles */
@@ -22,14 +25,3 @@
 
 
 /* Table Header Styles */
-
-
-
-
-
-
-
-
-
-
-
