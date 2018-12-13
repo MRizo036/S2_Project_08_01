@@ -6,22 +6,69 @@
    Case Problem 1
 
    Tables Style Sheet
-   Author: 
-   Date:   
+   Author: Maria De Jesus Rizo
+   Date:   12.10.18
 
    Filename:         mi_tables.css
 
 */
 
 /* Table Styles */
-table {
-    background: linear-gradient(rgb(190, 215, 255));
+/* Styles within this section will affect the appearence of the table elements and elements nested within the table element. */
+/* The selector below states that the table with an id of pricing will be affected by listed styles. The background property states that element will have a linear gradient of the colors specified. The border property states that the element will have a border of the specified width, style, and color. */
+table#pricing {
+    background: linear-gradient(rgb(190, 215, 255), black);
     border: 5px solid grey;
 }
 
+/* The selector states that styles within will affect both the th element and the td element. The line height property states that the elements will have a line height of the specified measurment. The padding property applies a padding of the size specified arounf each side of the elements */
+th,
+td {
+    border: 3px solid grey;
+    line-height: 1.4em;
+    padding: 8px;
+}
+
+/* The selector below states that the th element will have a styles listed applied to it. The color property states that the text will be the color specified. The font weight property states that the text will have a normal font wight applied to it. */
+th {
+    background-color: black;
+    color: rgb(130, 210, 255);
+    font-weight: normal;
+}
+
+/* The selector states that the td element will be affected by the styles listed. The font size property specifies how big the text in the element should be. The vertical align property aligns the text to the top of its container. */
+td {
+    color: white;
+    font-size: 0.9em;
+    vertical-align: top;
+}
 
 /* Column Styles */
+/* Styles within this section will affect the columns of the table. */
+/* The selector below is affecting the col element with an id of firstCol. The width property gives the element a width of 24% */
+col#firstCol {
+    width: 24%;
+}
 
-
+/* The selector below states that the col element with a class of dataCols will be affected.  */
+col.dataCols {
+    width: 19%;
+}
 
 /* Table Header Styles */
+/* Styles wihin this section will affect the header element in the HTML. */
+/* The selector states that the tr element nested within the thead element will have a height of 60px */
+thead tr {
+    height: 60px;
+}
+
+/* The selector below states that the first th element nested within the first tr element nested within the thead element will be affected. */
+thead tr:first-of-type th:first-of-type {
+    font-size: 2em;
+}
+
+/* The selector below states that the th elements that are not the first of their kind nested within the first tr element nested within the thead element will be affected. */
+thead tr:first-of-type th:not(:first-of-type) {
+    background-color: transparent;
+    color: black;
+}
